@@ -10,6 +10,8 @@
         width: 159px;
         .side_column_title {
             font-size: 2.7rem;
+            border: 6px dashed transparent;
+            z-index: 2;
             &:hover {
                 border: 6px dashed #000;
             }
@@ -22,14 +24,13 @@
         list-style: none;
         border: 6px dashed $_brass_yellow;
         border-top: none;
-        
         & li {
             padding: 10px;
             margin: 5px;
             font-weight: bold;
+            border: 3px dashed transparent;
             &:hover {
-                border: 3px dashed #000;
-                margin: 2px;
+                border:3px dashed #000;
             }
         }
     }

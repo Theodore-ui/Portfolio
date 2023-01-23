@@ -36,12 +36,11 @@
 .scs_main span {
     font-weight: bold;
 }
-.scs_main a:hover {
-    border: 3px dashed #000;
-}
-.space {
-    width: 100%;
-    padding: 20px;
+.scs_main a {
+    border-bottom: 3px dashed #000;
+    &:hover {
+        border-bottom: 3px solid #000;
+    }
 }
 @media screen and (min-width:1260px) {
     .scs_first_rows {
