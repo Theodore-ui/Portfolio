@@ -1,0 +1,87 @@
+// .form_wrapper {
+//     padding: 0 15px;
+// }
+.form_title_container {
+    margin: 0 auto 30px;
+    max-width: 650px;
+    padding-bottom: 10px;
+    border-bottom: 6px dashed #000;
+    .form_title {
+        margin: 0;
+    }
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 650px;
+    padding: 25px;
+    border: 6px dashed #000;
+    margin: 0 auto 30px;
+    .label_input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        & label {
+            font-weight: bold;
+        }
+        & input {
+            
+            padding: 5px 10px;
+            border: none;
+            border-bottom: 3px dashed #000;
+            background-color: transparent;
+            &:focus-visible {
+                border-bottom: 3px solid #000;
+                outline: none;
+            } 
+        }
+        & textarea {
+            border: none;
+            border-bottom: 3px dashed #000;
+            border-top: 3px dashed #000;
+            &:focus {
+                border-bottom: 3px solid #000;
+                border-top: 3px solid #000;
+                outline: none;    
+            }
+        }
+    }
+    & button {
+        font-weight: bold;
+        padding: 10px 15px;
+        background-color: #e3d343;
+        border: none;
+        width: 192.038px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .contact_form {
+        max-width: none;
+        width: 747px;
+    }
+    .form_first_rows {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact_form .right_input {
+        margin-right: 15px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .contact_form {
+        max-width: none;
+        width: 972px;
+        border-left: none;
+        border-right: none;
+    }
+    .form_first_rows {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact_form .right_input {
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,79 @@
+
+//constants
+@import "constants";
+
+//header 
+@import "header";
+
+//side column 
+@import "side_column";
+
+//projects 
+@import "projects";
+
+//form 
+@import "form";
+
+
+//coding examples
+@import "ce";
+
+// coding examples side column
+@import "ce_ side_column";
+
+//scs scheme
+@import "scs_scheme";
+
+//about me
+@import "about_me";
+
+* {
+    box-sizing: border-box;
+}
+*, :before, :after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier prime', Courier, monospace;
+}
+.down_arrow {
+    padding: 5px 25px;
+    background-color: $_brass_yellow;
+    border-radius: 4px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.menu_button {
+    padding: 15px;
+    background-color: $_brass_yellow;
+    border-radius: 4px;
+    border: none;
+    // align-self: flex-start;
+    margin-right: 15px;
+    display: none;
+    
+}
+.menu_title {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (min-width:0) and (max-width:768px) {
+    .menu_button {
+        display: block;
+    }
+}
+@media screen and (min-width:768px) {
+    body {
+        display: flex;
+        flex-direction: row
+    }
+}

@@ -1,0 +1,27 @@
+.main_column_examples {
+    width: 100%;
+    background-color: #4b4b4c;
+    padding: 0 20px;
+    & p {
+        font-weight: bold;
+    }
+}
+.coding_examples_title_container {
+    width: 100%;
+    padding: 15px;
+    border: 6px dashed $_brass_yellow;
+}
+.coding_examples_title {
+    width: 300px;
+    margin: 0 auto;
+    color: $_brass_yellow; 
+}
+.code_example_container {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 6px dashed $_brass_yellow;
+    .code_example {
+        margin: 0;
+    }
+}

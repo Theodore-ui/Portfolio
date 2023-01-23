@@ -1,0 +1,44 @@
+header {
+    position: relative;
+}
+.enigma {
+    height: 100vh;
+    width: 100%;
+}
+.name_career_menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding-left: 10px;
+    border-left: 5px dashed $_brass_yellow;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    //align-items: flex-start;
+}
+.name_career {
+    padding-right: 10px
+}
+.name {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.career {
+    font-size: 1.2rem;
+    font-weight: bold;
+}    
+
+.scroll_down_down_arrow {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
