@@ -1,9 +1,9 @@
 .about_me_main {
     margin: 0 20px;
-    & a {
+    & .inline_scs {
         font-weight: bold;
         &:hover {
-            color: $_brass_yellow;
+            text-decoration: underline;
         }
     }
 }
@@ -21,6 +21,12 @@
     padding: 15px;
     border: 6px dashed $_brass_yellow; 
     margin-bottom: 15px;
+}
+.scion_scheme {
+    border-bottom: 3px dashed #000;
+        &:hover {
+            border-bottom: 3px solid #000;
+        }
 }
 @media screen and (min-width:0) and (max-width: 768px) {
     .about_me_title_container {

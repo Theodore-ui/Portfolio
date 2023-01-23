@@ -14,6 +14,7 @@
         border-bottom: 6px dashed #000;
     }
     .scs_title {
+        width: 350px;
         padding: 15px;
         border: 6px dashed #000;
     }
@@ -36,24 +37,28 @@
 .scs_main span {
     font-weight: bold;
 }
+.T_S {
+    margin-bottom: 10px;
+}
 .scs_main a {
     border-bottom: 3px dashed #000;
     &:hover {
         border-bottom: 3px solid #000;
     }
 }
+
 @media screen and (min-width:1260px) {
     .scs_first_rows {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        & .scs_section {
-            max-width: none;
-            width: 500px;
-            padding: 0 10px;
-            border-right: 6px dashed #000;
-            
-        }
+    }
+    .scs_section {
+        max-width: none;
+        width: 500px;
+        padding: 0 10px;
+        border-right: 6px dashed #000;
+        
     }
     .intro {
         margin-right: 15px;
