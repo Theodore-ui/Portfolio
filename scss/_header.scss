@@ -24,16 +24,17 @@ header {
     padding-right: 10px;
 }
 .name {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 0;
 }
-span {
+.name span {
     opacity: 0;
 }
-.fade {
+.name .fade {
     opacity: 1;
 }
+
 .career {
     font-size: 1.2rem;
     font-weight: bold;
@@ -49,3 +50,4 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+

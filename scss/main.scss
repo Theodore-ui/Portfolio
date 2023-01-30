@@ -23,6 +23,8 @@
 //about me
 @import "about_me";
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -31,6 +33,9 @@
 }
 body {
     font-family: 'Courier prime', Courier, monospace;
+    display: flex;
+    flex-direction: row
+    
 }
 .down_arrow {
     padding: 5px 25px;
@@ -67,9 +72,7 @@ a {
         display: block;
     }
 }
-// @media screen and (min-width:768px) {
-    body {
-        display: flex;
-        flex-direction: row
-    }
-// }
+   
+
+
+

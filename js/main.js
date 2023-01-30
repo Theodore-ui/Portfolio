@@ -1,14 +1,14 @@
-// const sideColumn = $('.side_column');
-// const menuBtn = $('.menu_button');
+const sideColumn = document.querySelector('.side_column');
+const menuBtn = document.querySelector('.menu_button');
 
 
-// menuBtn.on('click', function() {
-//     if (sideColumn.hide()) {
-//         sideColumn.show();
-//     } else {
-//         sideColumn.hide();  
-//     }   
-// });
+menuBtn.addEventListener('click', function() {
+    if (sideColumn.classList.contains('active')) {
+        sideColumn.classList.remove('active')
+    } else {
+        sideColumn.classList.add('active');  
+    }   
+});
 
 const text = document.querySelector('.name');
 const strText = text.textContent;
@@ -19,7 +19,7 @@ for (let i = 0; i < splitText.length; i++) {
 }
 
 let char = 0;
-let timer= setInterval(onTick, 200);
+let timer= setInterval(onTick, 100);
 
 function onTick() {
     const span = text.querySelectorAll('span')[char];
@@ -35,29 +35,14 @@ function complete() {
     clearInterval(timer);
     timer = null;
 }
-// const formBtn = $('.form_button');
 
-// formBtn.on('click', function() {
-//     if ($('#first_name').val() === '') {
-//         $('#first_name').css('border', '3px solid red');
-//         console.log('nope');
-//     }
-//     if ($('#last_name').val() === '') {
-//         $('#last_name').css('border', '3px solid red');
-//         console.log('nope');
-//     }
-//     if ($('#email').val() === '') {
-//         $('#email').css('border', '3px solid red');
-//         console.log('nope');
-//     }
-//     if ($('#subject').val() === '') {
-//         $('#subject').css('border', '3px solid red');
-//         console.log('nope');
-//     } else if {
+const firstName = document.getElementById('first_name');
+const lastName = document.getElementById('last_name');
+const email = document.getElementById('email');
+const subject = document.getElementById('subject');
+const message = document.getElementById('message');
+const form = document.getElementById('contact_form');
 
-//     } 
-//     if ($('#message').val() === '') {
-//         $('#message').css('border', '3px solid red');
-//         console.log('nope'); 
-//     }
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
 // });

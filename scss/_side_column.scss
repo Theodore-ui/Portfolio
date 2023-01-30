@@ -36,6 +36,9 @@
         }
     }
 }
+.active {
+    display: block;
+}
 @media screen and (min-width:768px) {
     .side_column {
         display: flex;
