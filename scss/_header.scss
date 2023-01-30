@@ -24,9 +24,15 @@ header {
     padding-right: 10px;
 }
 .name {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0;
+}
+span {
+    opacity: 0;
+}
+.fade {
+    opacity: 1;
 }
 .career {
     font-size: 1.2rem;
