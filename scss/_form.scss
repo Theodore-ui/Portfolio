@@ -57,6 +57,9 @@
         width: 192.038px;
         margin: 0 auto;
         cursor: pointer;
+        &:hover {
+            background-color:  #FFD700;    
+        }
     }
 }
 #error {

@@ -44,11 +44,11 @@ a {
     background-color: $_brass_yellow;
     border-radius: 4px;
     border: none;
-    // align-self: flex-start;
     margin-right: 15px;
     display: none;
+    cursor: pointer;
     &:hover {
-        cursor: pointer;
+        background-color:  #FFD700;    
     }
 }
 .menu_title {

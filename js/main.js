@@ -4,9 +4,9 @@ const menuBtn = document.querySelector('.menu_button');
 
 menuBtn.addEventListener('click', function() {
     if (sideColumn.classList.contains('active')) {
-        sideColumn.classList.remove('active').slideUp();
+        sideColumn.classList.remove('active');
     } else {
-        sideColumn.classList.add('active').slideDown();  
+        sideColumn.classList.add('active');  
     }   
 });
 
@@ -22,7 +22,7 @@ const strText = text.textContent;
 const splitText = strText.split('');
 text.textContent = '';
 const career = document.querySelector('.career');
-career.classList.add('gold_bg');
+career.classList.add('brass_bg');
 
 
 for (let i = 0; i < splitText.length; i++) {
@@ -37,7 +37,7 @@ function onTick () {
     span.classList.add('fade');
     char++;
     if (char === splitText.length) {
-        career.classList.remove('gold_bg');
+        career.classList.remove('brass_bg');
         complete();
         return;
     }
