@@ -38,16 +38,19 @@ header {
 .career {
     font-size: 1.2rem;
     font-weight: bold;
-}    
-
-.scroll_down_down_arrow {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.down_button {
+    padding: 5px 25px 2px;
+    background-color: $_brass_yellow;
+    border: none;
+    border-radius: 4px;
     position: absolute;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+    cursor: pointer;
+}    
 
+.gold_bg {
+    background-color: $_brass_yellow;
+}

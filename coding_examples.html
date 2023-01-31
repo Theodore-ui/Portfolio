@@ -25,8 +25,55 @@
                     <h1 class="coding_examples_title">Coding Examples</h1>
                 </div>
             </div>
-            <div class="code_example_container">
-                <p class="code_example">Example text</p>
+            <div class="code_examples_container">
+                <h2 class="code_example_title">Example: JavaScript Typing Animation</h2>
+                <div class="example_description">
+                    <p class="code_example">
+                        1)  const text = document.querySelector('.name');<br>
+                        2)  const strText = text.textContent;<br>
+                        3)  const splitText = strText.split('');<br>
+                        4)  text.textContent = '';<br>
+                        5)  const career = document.querySelector('.career');<br>
+                        6)  career.classList.add('gold_bg');<br>
+                        7)<br>
+                        8)  for (let i = 0; i &lt; splitText.length; i++) {<br>
+                        9)      text.innerHTML += `<span>${splitText[i]}</span>`;<br>
+                        10)  }<br>
+                        11)<br>
+                        12)  let char = 0;<br>
+                        13)  let timer= setInterval(onTick, 150);<br>
+                        14)<br>
+                        15)  function onTick () {<br>
+                        16)      const span = text.querySelectorAll('span')[char];<br>
+                        17)      span.classList.add('fade');<br>
+                        18)      char++;<br>
+                        19)      if (char === splitText.length) {<br>
+                        20)        career.classList.remove('gold_bg');<br>
+                        21)        complete();<br>
+                        22)        return;<br>
+                        23)      }<br>
+                        24)  }<br>
+                        25)  function complete() {<br>
+                        26)      clearInterval(timer);<br>
+                        27)      time-r = null;<br>
+                        28)  }
+                    </p>
+                    <p class="description">
+                    1 - 4 Selecting the name element that I intend to have typed on screen, focusing on its text content,
+                    , splitting up the text content so that each character of the elements is selectable. Finally removing the existing
+                    text content so that only one version of the text appears on screen.<br><br> 
+                    5 - 6 Selecting the career element ,that I intend to display after the first element is typed out, and adding a gold background 
+                    that will hide the gold text.<br><br>
+                    8 - 9 A loop that iterates through the items in the splitText array, converts them into span elements then adds
+                    them back to the text constant.<br><br>
+                    12 - 28 A counter that will allow a function to iterate through all the span elements in the text constant, a timer that
+                    will dictate the delay between function cycles and there for the speed of the typing animation.
+                    15 - 24 A function that adds the class the class fade to the span elements within the text constant that makes them appear 
+                    on the screen. This function is stopped but an if statement that checks if the char value is equal to the splitText length.
+                    When the char value equals the splitText length career element is revealed by removing its background and the function
+                    is made to stop iterating by deactivating the timer.  
+                    </p>
+                </div>
             </div>
             <div class="code_example_container">
                 <p class="code_example">Example text 2</p>
