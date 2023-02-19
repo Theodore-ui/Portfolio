@@ -33,17 +33,17 @@
         width: 65%;
     }
 }
-@media screen and (min-width:992px) {
-    .about_me_first_rows {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        & .key_skills {
-            min-width: 50%;
-            margin-right: 7.5px;
-        }
-        & .education {
-            margin-left: 7.5px;
-        } 
-    }
-}
+// @media screen and (min-width:992px) {
+//     .about_me_first_rows {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         & .key_skills {
+//             min-width: 50%;
+//             margin-right: 7.5px;
+//         }
+//         & .education {
+//             margin-left: 7.5px;
+//         } 
+//     }
+// }
