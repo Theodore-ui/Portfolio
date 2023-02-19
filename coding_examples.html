@@ -67,7 +67,7 @@
                     8 - 9 A loop that iterates through the items in the splitText array, converts them into span elements then adds
                     them back to the text constant.<br><br>
                     12 - 28 A counter that will allow a function to iterate through all the span elements in the text constant, a timer that
-                    will dictate the delay between function cycles and there for the speed of the typing animation.
+                    will dictate the delay between function cycles and there for the speed of the typing animation.<br><br>
                     15 - 24 A function that adds the class the class fade to the span elements within the text constant that makes them appear 
                     on the screen. This function is stopped but an if statement that checks if the char value is equal to the splitText length.
                     When the char value equals the splitText length career element is revealed by removing its background and the function
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="code_examples_container">
-                <h2 class="code_example_title">Example: JavaScript Typing Animation</h2>
+                <h2 class="code_example_title">Example: JavaScript display and retract menu</h2>
                 <div class="example_description">
                     <p class="code_example">
                         1)  function toggleSidemenu () {<br>
@@ -100,69 +100,49 @@
                         18) }
                     </p>
                     <p class="description">
-                    1 - 4 Selecting the name element that I intend to have typed on screen, focusing on its text content,
-                    , splitting up the text content so that each character of the elements is selectable. Finally removing the existing
-                    text content so that only one version of the text appears on screen.<br><br> 
-                    5 - 6 Selecting the career element ,that I intend to display after the first element is typed out, and adding a gold background 
-                    that will hide the gold text.<br><br>
-                    8 - 9 A loop that iterates through the items in the splitText array, converts them into span elements then adds
-                    them back to the text constant.<br><br>
-                    12 - 28 A counter that will allow a function to iterate through all the span elements in the text constant, a timer that
-                    will dictate the delay between function cycles and there for the speed of the typing animation.
-                    15 - 24 A function that adds the class the class fade to the span elements within the text constant that makes them appear 
-                    on the screen. This function is stopped but an if statement that checks if the char value is equal to the splitText length.
-                    When the char value equals the splitText length career element is revealed by removing its background and the function
-                    is made to stop iterating by deactivating the timer.  
+                    1 Establishing a function that will display a menu on the left of the page menu a button is clicked or retract the menu if the
+                     button is clicked while the menu is visible.<br><br> 
+                    2 - 10 If the menu is hidden when the funtion is called then the menu slides in to the page from the right. The page shifts
+                     to the left to make room for the menu. The page is unable to be scrolled through. The pages scrollbar is displayed left of the memu.
+                     An ex icon is displayed inside the button that executes the function. The burger icon is removed from the button.
+                     A see through grey element is display over the page.<br><br>
+                    11 - 17 If the menu is visible when the funtion is called then the menu slides off the page to the right. The page is shifted right
+                    to be fully visible. The pages is scrollable. The ex icon is removed from the button. A burger icon is displayed inside the button.
+                    The grey overlay on the page is removed.<br><br>  
                     </p>
                 </div>
             </div>
             <div class="code_examples_container">
-                <h2 class="code_example_title">Example: JavaScript Typing Animation</h2>
+                <h2 class="code_example_title">Example: JavaScript storing information in a database</h2>
                 <div class="example_description">
                     <p class="code_example">
-                        1)  const text = document.querySelector('.name');<br>
-                        2)  const strText = text.textContent;<br>
-                        3)  const splitText = strText.split('');<br>
-                        4)  text.textContent = '';<br>
-                        5)  const career = document.querySelector('.career');<br>
-                        6)  career.classList.add('gold_bg');<br>
-                        7)<br>
-                        8)  for (let i = 0; i &lt; splitText.length; i++) {<br>
-                        9)      text.innerHTML += `<span>${splitText[i]}</span>`;<br>
-                        10)  }<br>
-                        11)<br>
-                        12)  let char = 0;<br>
-                        13)  let timer= setInterval(onTick, 150);<br>
-                        14)<br>
-                        15)  function onTick () {<br>
-                        16)      const span = text.querySelectorAll('span')[char];<br>
-                        17)      span.classList.add('fade');<br>
-                        18)      char++;<br>
-                        19)      if (char === splitText.length) {<br>
-                        20)        career.classList.remove('gold_bg');<br>
-                        21)        complete();<br>
-                        22)        return;<br>
-                        23)      }<br>
-                        24)  }<br>
-                        25)  function complete() {<br>
-                        26)      clearInterval(timer);<br>
-                        27)      time-r = null;<br>
-                        28)  }
+                        1)  function pushToDB(emailIn, image) {<br>
+                        2)<br>  
+                        3)      let emailExists;<br>
+                        4)      for (let i = 0; i &lt; db.length; i++) {<br>
+                        5)          if (db[i].email === emailIn) {<br>
+                        6)              db[i].images.push(image)<br>
+                        7)              emailExists = true;<br>
+                        8)              break;<br>
+                        9)          } else {<br>
+                        10)             emailExists = false;<br>
+                        11)         }<br>
+                        12)     }<br>
+                        13)     if (!emailExists) {<br>
+                        14)         db.push({email: email.value, images: [image]});<br>
+                        15)     }<br>
+                        16)     pushToDBAnimations()<br> 
+                        17) }
                     </p>
                     <p class="description">
-                    1 - 4 Selecting the name element that I intend to have typed on screen, focusing on its text content,
-                    , splitting up the text content so that each character of the elements is selectable. Finally removing the existing
-                    text content so that only one version of the text appears on screen.<br><br> 
-                    5 - 6 Selecting the career element ,that I intend to display after the first element is typed out, and adding a gold background 
-                    that will hide the gold text.<br><br>
-                    8 - 9 A loop that iterates through the items in the splitText array, converts them into span elements then adds
-                    them back to the text constant.<br><br>
-                    12 - 28 A counter that will allow a function to iterate through all the span elements in the text constant, a timer that
-                    will dictate the delay between function cycles and there for the speed of the typing animation.
-                    15 - 24 A function that adds the class the class fade to the span elements within the text constant that makes them appear 
-                    on the screen. This function is stopped but an if statement that checks if the char value is equal to the splitText length.
-                    When the char value equals the splitText length career element is revealed by removing its background and the function
-                    is made to stop iterating by deactivating the timer.  
+                    1 Establishing a function that stores an email address and an image src array as an object in a database or adds an image src to an
+                     exsisting image array.<br><br>
+                    2 Establishing the variable "emailExists" that will be used to deside whether to create a new object or to add an item to an image array.<br><br>
+                    4 - 12 A loop that iterates through the object in the database and checks if the email address that is beging inputted is already an
+                     item in the database. If the email address exists "emailExists" will equal true and the inputted image src will be stored in the image array
+                     associated with the inputted email address. Otherwsie "emailExists" will equal false.<br><br>
+                    13 - 15 If "emailExists" equals false an object is created in the database containing the inputting email address and an image array containing
+                    the inputted image src.  
                     </p>
                 </div>
             </div>
