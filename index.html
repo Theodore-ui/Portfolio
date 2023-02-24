@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Theodore Lorenc Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
     <body>
         <div class="side_column">
@@ -32,7 +33,7 @@
                     <button class="menu_button"><img src="icons/190-menu.png" alt="Menu Button"></button>
                 </div>
                 <div class="scroll_down_down_arrow">
-                    <button class="down_button"><img src="icons/319-arrow-down2.png"></button>
+                    <button class="down_button"><i class="fa-solid fa-chevron-down"></i></button>
                 </div>
             </header>
             <main>
@@ -42,14 +43,14 @@
                     </div>
                     <div class="project_card_container">
                         <div class="project_card">
-                            <img class="project_img" src="imgaes/netmatters.png" alt="Netmatters home page recreation">
+                            <img class="project_img" src="images/netmatters.png" alt="Netmatters home page recreation">
                             <div class="project_card_bottom">
                                 <h2>HTML &#38; CSS/SASS Reflection</h2>
                                 <p><a href="https://theodore-ui.github.io/HTML_and_CSS_Reflection/">Examine Project</a></p>
                             </div>
                         </div>
                         <div class="project_card">
-                            <img class="project_img" src="imgaes/link_image.png" alt="Linking an image to an email">
+                            <img class="project_img" src="images/link_image.png" alt="Linking an image to an email">
                             <div class="project_card_bottom">
                                 <h2>JavaScript Array Reflection</h2>
                                 <p><a href="https://theodore-ui.github.io/Javascript_Array_Reflection/">Examine Project</a></p>
@@ -70,7 +71,7 @@
                             </div>
                         </div>
                     </div>
-                </dive>
+                </div>
                 <div class="form_wrapper" id="con">
                     <form id="contact_form" action="index.html" method="GET">
                         <div class="form_title_container">
@@ -94,12 +95,12 @@
                             </div>
                             <div class="label_input">
                                 <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject">
+                                <input id="subject" name="subject">
                             </div>
                         </div>
                         <div class="label_input">
                             <label for="message">Message</label>
-                            <textarea type="text" id="message" name="message"></textarea>
+                            <textarea id="message" name="message"></textarea>
                         </div>
                         <button type="submit" class="form_button">Send</button>
                     </form>
@@ -108,5 +109,6 @@
         </div>
         <script src="js/jquery-3.6.3.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/1e403b2a33.js" crossorigin="anonymous"></script>
     </body>
 </html>
