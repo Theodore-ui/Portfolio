@@ -60,13 +60,13 @@
                     </p>
                     <p class="description">
                     1 - 4 Selecting the name element that I intend to have typed on screen, focusing on its text content,
-                    , splitting up the text content so that each character of the elements is selectable. Finally removing the existing
+                     splitting up the text content so that each character of the elements is selectable. Finally removing the existing
                     text content so that only one version of the text appears on screen.<br><br> 
                     5 - 6 Selecting the career element ,that I intend to display after the first element is typed out, and adding a gold background 
                     that will hide the gold text.<br><br>
                     8 - 9 A loop that iterates through the items in the splitText array, converts them into span elements then adds
                     them back to the text constant.<br><br>
-                    12 - 28 A counter that will allow a function to iterate through all the span elements in the text constant, a timer that
+                    12 - 28 A char that will allow a function to iterate through all the span elements in the text constant, a timer that
                     will dictate the delay between function cycles and there for the speed of the typing animation.<br><br>
                     15 - 24 A function that adds the class the class fade to the span elements within the text constant that makes them appear 
                     on the screen. This function is stopped but an if statement that checks if the char value is equal to the splitText length.
@@ -144,6 +144,49 @@
                     13 - 15 If "emailExists" equals false an object is created in the database containing the inputtied email address and an image array containing
                     the inputted image src.  
                     </p>
+                </div>
+            </div>
+            <div class="code_examples_container">
+                <h2 class="code_example_title">Example: SQL selecting data from a database</h2>
+                <div class="example_description">
+                    <div class="code_example">
+                        <img src="https://www.w3resource.com/w3r_images/employee-database.png">
+                        <p class="code">
+                            1)   SELECT emp_name, job_name FROM employees<br> 
+                            3)   WHERE salary > 2000.00 AND<br>
+                            4)   dep_id in<br> 
+                            5)   (SELECT dep_id FROM department WHERE dep_name = 'FINANCE')<br>
+                            6)   ORDER BY salary DESC;
+                        </p>
+                    </div>
+                    <div class="description">
+                        <div class="des_section">
+                            <h3>Query objective</h3>
+                            <P>
+                                To select the names and job titles of all the employees that have a salary
+                                greater the £2000 and work in finance. The employees selected will be ordered by
+                                their salery in descending order. 
+                            </P>
+                        </div>
+                        <div class="des_section">
+                            <h3>Description</h3>
+                            <p>
+                                1 Selecting the colums that will be displayed after the query is executed.<br><br> 
+                                2 Adding a condition that only the rows that have a salery greater than 2000.00
+                                will be displayed.<br><br>
+                                3 - 4 Adding a condition that only the rows with department-ids that have a department
+                                name of 'FINANCE' in the department table will display.<br><br>
+                                6 Ordering the selected rows from heighest to lowest salery.    
+                            </p>
+                        </div>
+                        <div class="des_section">
+                            <h3>Query outcome</h3>
+                            <P>
+                                A table of two columns, emp_name and job_name, will be dispayed ordered by salary in
+                                descending order.
+                            </P>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

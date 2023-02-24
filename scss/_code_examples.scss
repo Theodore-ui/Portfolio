@@ -29,6 +29,14 @@
 .code_example_title {
     text-align: center;
 }
+.code_example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.des_section {
+    border-bottom: 3px dashed $_brass_yellow;
+}
 .example_description {
     display: flex;
     flex-direction: column;
@@ -36,10 +44,14 @@
     & p {
         font-weight: bold;
         max-width: 720px;
-        padding: 15px;
-        margin: 0;
+        padding: 0;
+    }
+    & img {
+        margin-bottom: 15px;
     }
 }
+
+
 
 @media screen and (min-width:1260px) {
     .example_description {
