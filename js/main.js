@@ -25,7 +25,7 @@ cover.addEventListener('click', menuToggle);
     
 
 const downBtn = document.querySelector('.down_button');
-const projects = document.querySelector('#pro')
+const projects = document.querySelector('#projects')
 
 downBtn.addEventListener('click', function() {
     projects.scrollIntoView();     
@@ -101,8 +101,10 @@ form.addEventListener('submit', (e) => {
     } 
 });
 
-const menuLink = document.querySelector('.menu_link');
+const projectsLink = document.querySelector('.projects_link');
+const contactLink = document.querySelector('.contact_link');
 
-menuLink.addEventListener('click', menuToggle);
+projectsLink.addEventListener('click', menuToggle);
+contactLink.addEventListener('click', menuToggle);
 
 
