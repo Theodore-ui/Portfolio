@@ -12,12 +12,16 @@
                 <h1 class="side_column_title"><a href="index.html">TL</a></h1>
             </div>
             <ul>
-                <li><a href="index.html#pro">Portfolio</a></li>
+                <li><a href="index.html#projects">Portfolio</a></li>
                 <li><a href="coding_examples.html">Coding examples</a></li>
                 <li><a href="scs_scheme.html">S.C.S Scheme</a></li>
                 <li><a href="about_me.html">About me</a></li>
-                <li><a href="index.html#con">Contact me</a></li>
+                <li><a href="index.html#contact">Contact me</a></li>
             </ul>
+            <div class="github">
+                <h2>GitHub</h2>
+                <a class="github_link" href="https://github.com/Theodore-ui?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
         </div>
         <div class="main_column_examples">
             <div class="menu_title">
@@ -56,20 +60,20 @@
                         24)  }<br>
                         25)  function complete() {<br>
                         26)      clearInterval(timer);<br>
-                        27)      time-r = null;<br>
+                        27)      timer = null;<br>
                         28)  }
                     </p>
                     <p class="description">
-                    1 - 4 Selecting the name element that I intend to have typed on screen, focusing on its text content,
+                    1 - 4 Selecting the name element that I intend to have typed on the screen, focusing on its text content,
                      splitting up the text content so that each character of the elements is selectable. Finally removing the existing
-                    text content so that only one version of the text appears on screen.<br><br> 
-                    5 - 6 Selecting the career element ,that I intend to display after the first element is typed out, and adding a gold background 
+                    text content so that only one version of the text appears on the screen.<br><br> 
+                    5 - 6 Selecting the career element, that I intend to display after the first element is typed out, and adding a gold background 
                     that will hide the gold text.<br><br>
                     8 - 9 A loop that iterates through the items in the splitText array, converts them into span elements then adds
                     them back to the text constant.<br><br>
                     12 - 28 A char that will allow a function to iterate through all the span elements in the text constant, a timer that
                     will dictate the delay between function cycles and there for the speed of the typing animation.<br><br>
-                    15 - 24 A function that adds the class the class fade to the span elements within the text constant that makes them appear 
+                    15 - 24 A function that adds the class fade to the span elements within the text constant that makes them appear 
                     on the screen. This function is stopped but an if statement that checks if the char value is equal to the splitText length.
                     When the char value equals the splitText length career element is revealed by removing its background and the function
                     is made to stop iterating by deactivating the timer.  
@@ -103,12 +107,12 @@
                     <p class="description">
                     1 Establishing a function that will display a menu on the left of the page when a button is clicked or retract the menu if the
                      button is clicked while the menu is visible.<br><br> 
-                    2 - 10 If the menu is hidden when the funtion is called then the menu slides into the page from the right. The page shifts
-                     to the left to make room for the menu. The page is unable to be scrolled through. The pages scrollbar is displayed left of the memu.
+                    2 - 10 If the menu is hidden when the function is called then the menu slides into the page from the right. The page shifts
+                     to the left to make room for the menu. The page is unable to be scrolled through. The page scrollbar is displayed left of the menu.
                      An ex icon is displayed inside the button that executes the function. The burger icon is removed from the button.
-                     A see through grey element is display over the page.<br><br>
-                    11 - 17 If the menu is visible when the funtion is called then the menu slides off the page to the right. The page is shifted right
-                    to be fully visible. The pages is scrollable. The ex icon is removed from the button. A burger icon is displayed inside the button.
+                     A see-through grey element is displayed over the page.<br><br>
+                    11 - 17 If the menu is visible when the function is called then the menu slides off the page to the right. The page is shifted right
+                    to be fully visible. The page scrollable. The ex icon is removed from the button. A burger icon is displayed inside the button.
                     The grey overlay on the page is removed.<br><br>  
                     </p>
                 </div>
@@ -137,12 +141,12 @@
                     </p>
                     <p class="description">
                     1 Establishing a function that stores an email address and an image src array as an object in a database or adds an image src to an
-                     exsisting image array.<br><br>
-                    2 Establishing the variable "emailExists" that will be used to deside whether to create a new object or to add an item to an image array.<br><br>
-                    4 - 12 A loop that iterates through the objects in the database and checks if the email address that is beging inputted is already an
+                     existing image array.<br><br>
+                    2 Establishing the variable "emailExists" that will be used to decide whether to create a new object or to add an item to an image array.<br><br>
+                    4 - 12 A loop that iterates through the objects in the database and checks if the email address that is being inputted is already an
                      item in the database. If the email address exists "emailExists" will equal true and the inputted image src will be stored in the image array
-                     associated with the inputted email address. Otherwsie "emailExists" will equal false.<br><br>
-                    13 - 15 If "emailExists" equals false an object is created in the database containing the inputtied email address and an image array containing
+                     associated with the inputted email address. Otherwise "emailExists" will equal false.<br><br>
+                    13 - 15 If "emailExists" equals false an object is created in the database containing the inputted email address and an image array containing
                     the inputted image src.  
                     </p>
                 </div>
@@ -165,25 +169,25 @@
                             <h3>Query objective</h3>
                             <P>
                                 To select the names and job titles of all the employees that have a salary
-                                greater the £2000 and work in finance. The employees selected will be ordered by
+                                greater than £2000 and work in finance. The employees selected will be ordered by
                                 their salery in descending order. 
                             </P>
                         </div>
                         <div class="des_section">
                             <h3>Description</h3>
                             <p>
-                                1 Selecting the colums that will be displayed after the query is executed.<br><br> 
-                                2 Adding a condition that only the rows that have a salery greater than 2000.00
+                                1 Selecting the columns that will be displayed after the query is executed.<br><br> 
+                                2 Adding a condition that only the rows that have a salary greater than 2000.00
                                 will be displayed.<br><br>
                                 3 - 4 Adding a condition that only the rows with department-ids that have a department
                                 name of 'FINANCE' in the department table will display.<br><br>
-                                6 Ordering the selected rows from heighest to lowest salery.    
+                                6 Ordering the selected rows from highest to lowest salary.    
                             </p>
                         </div>
                         <div class="des_section">
                             <h3>Query outcome</h3>
                             <P>
-                                A table of two columns, emp_name and job_name, will be dispayed ordered by salary in
+                                A table of two columns, emp_name and job_name, will be displayed ordered by salary in
                                 descending order.
                             </P>
                         </div>

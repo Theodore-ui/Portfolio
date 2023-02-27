@@ -1,14 +1,28 @@
 const sideColumn = document.querySelector('.side_column');
+const cover = document.querySelector('.cover');
+const mainColumn = document.querySelector('.main_column');
 const menuBtn = document.querySelector('.menu_button');
+let oldYPos = window.scrollY;
 
-
-menuBtn.addEventListener('click', function() {
+function menuToggle() {
     if (sideColumn.classList.contains('active')) {
         sideColumn.classList.remove('active');
+        cover.removeAttribute('style');
+        mainColumn.removeAttribute('style');
+        
     } else {
         sideColumn.classList.add('active');  
+        mainColumn.style.height = '100vh';
+        mainColumn.style.overflow = 'auto';
+        cover.style.display = 'block';
+        $('.cover').scrollTop(oldYPos); 
     }   
-});
+}
+
+menuBtn.addEventListener('click', menuToggle);
+
+cover.addEventListener('click', menuToggle);
+    
 
 const downBtn = document.querySelector('.down_button');
 const projects = document.querySelector('#pro')
@@ -67,9 +81,12 @@ form.addEventListener('submit', (e) => {
         messages.push('Last name is required')
     }
     if (email.value === '' || email.value === null) {
-        messages.push('Email adrress is required')
+        messages.push('Email address is required')
     } else if (!email.value.match(complexEmailRegex)) {
         messages.push('Please enter a valid email address')
+    }
+    if (subject.value == '' || message.value === null) {
+        messages.push('Subject is required')
     }
     if (message.value == '' || message.value === null) {
         messages.push('Message is required')
@@ -82,4 +99,10 @@ form.addEventListener('submit', (e) => {
         errorElement.classList.add('success_box') 
         errorElement.textContent = 'The information you provided has been succesfully logged'  
     } 
-})
+});
+
+const menuLink = document.querySelector('.menu_link');
+
+menuLink.addEventListener('click', menuToggle);
+
+

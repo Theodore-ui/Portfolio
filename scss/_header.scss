@@ -4,7 +4,7 @@ header {
 .enigma {
     height: 100vh;
     width: 100%;
-    display: cover;
+    object-fit: cover;
 }
 .name_career_menu {
     position: absolute;
@@ -12,8 +12,6 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
-    padding-left: 10px;
-    border-left: 5px dashed $_brass_yellow;
     color: $_brass_yellow;
     display: flex;
     flex-direction: row;
@@ -22,6 +20,8 @@ header {
 }
 .name_career {
     padding-right: 10px;
+    padding-left: 10px;
+    border-left: 5px dashed $_brass_yellow;
 }
 .name {
     font-size: 3rem;

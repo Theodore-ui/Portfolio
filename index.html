@@ -15,14 +15,19 @@
                 <h1 class="side_column_title"><a href="index.html">TL</a></h1>
             </div>
             <ul>
-                <li><a href="index.html#pro">Portfolio</a></li>
-                <li><a href="coding_examples.html">Coding examples</a></li>
-                <li><a href="scs_scheme.html">S.C.S Scheme</a></li>
-                <li><a href="about_me.html">About me</a></li>
-                <li><a href="index.html#con">Contact me</a></li>
+                <li><a href="index.html#projects" class="">Portfolio</a></li>
+                <li><a href="coding_examples.html" class="">Coding examples</a></li>
+                <li><a href="scs_scheme.html" class="">S.C.S Scheme</a></li>
+                <li><a href="about_me.html" class="">About me</a></li>
+                <li><a href="index.html#contact" class="menu_link">Contact me</a></li>
             </ul>
+            <div class="github">
+                <h2>GitHub</h2>
+                <a class="github_link" href="https://github.com/Theodore-ui?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
         </div>
         <div class="main_column">
+            <div class="cover"></div>
             <header>
                 <img class="enigma" src="https://sweatpantsandcoffee.com/wp-content/uploads/2016/11/1200x628-PSYAL-Header.png" alt="Enigma machine">            
                 <div class="name_career_menu">
@@ -37,7 +42,7 @@
                 </div>
             </header>
             <main>
-                <div class="projects" id="pro">
+                <div class="projects" id="projects">
                     <div class="project_title_container">
                         <h1 class="projects_title">PROJECTS</h1>
                     </div>
@@ -46,33 +51,35 @@
                             <img class="project_img" src="images/netmatters.png" alt="Netmatters home page recreation">
                             <div class="project_card_bottom">
                                 <h2>HTML &#38; CSS/SASS Reflection</h2>
-                                <p><a href="https://theodore-ui.github.io/HTML_and_CSS_Reflection/">Examine Project</a></p>
+                                <p>A recreation of the Netmatters home page.</p>
+                                <p><a href="https://theodore-ui.github.io/HTML_and_CSS_Reflection/" target=”_blank”>Examine Project</a></p>
                             </div>
                         </div>
                         <div class="project_card">
                             <img class="project_img" src="images/link_image.png" alt="Linking an image to an email">
                             <div class="project_card_bottom">
                                 <h2>JavaScript Array Reflection</h2>
-                                <p><a href="https://theodore-ui.github.io/Javascript_Array_Reflection/">Examine Project</a></p>
+                                <p>A randomly generated can be linked to an email. All images linked to an email can be viewed and unlinked.</p>
+                                <p><a href="https://theodore-ui.github.io/Javascript_Array_Reflection/" target=”_blank”>Examine Project</a></p>
                             </div>
                         </div>
                         <div class="project_card">
                             <img class="project_img" src="https://aerocorner.com/wp-content/uploads/2019/07/Vought-F4U-Corsair-1024x500.jpg" alt="project placeholder">
                             <div class="project_card_bottom">
                                 <h2>Project Three</h2>
-                                <p><a href="#">Examine Project</a></p>
+                                <p><a href="#" target=”_blank”>Examine Project</a></p>
                             </div>
                         </div>
                         <div class="project_card">
                             <img class="project_img" src="https://aerocorner.com/wp-content/uploads/2019/07/Vought-F4U-Corsair-1024x500.jpg" alt="project placeholder">
                             <div class="project_card_bottom">
                                 <h2>Project Four</h2>
-                                <p><a href="#">Examine Project</a></p>
+                                <p><a href="#" target=”_blank”>Examine Project</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="form_wrapper" id="con">
+                <div class="form_wrapper" id="contact">
                     <form id="contact_form" action="index.html" method="GET">
                         <div class="form_title_container">
                             <h1 class="form_title">CONTACT ME</h1>
@@ -100,7 +107,7 @@
                         </div>
                         <div class="label_input">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message"></textarea>
+                            <textarea id="message" name="message" rows="7"></textarea>
                         </div>
                         <button type="submit" class="form_button">Send</button>
                     </form>
