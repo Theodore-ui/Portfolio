@@ -1,11 +1,5 @@
 .projects {
     padding: 0 15px;
-    & a {
-        color: #000;
-        &:hover {
-            font-weight: bold;
-        }
-    }
 }
 .project_title_container {
     margin: 30px auto 30px auto;
@@ -46,11 +40,31 @@
 }
 .project_card_bottom {
     padding: 10px;
+    object-fit: cover;
     & h2 {
         margin-top: 0;
     }
+}
+
+.project_links {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    
+    
     & p {
-        margin-bottom: 0;
+        border-bottom: 3px dashed #000;
+        margin: 20px 0 0 0;
+        &:hover {
+            border-bottom: 3px solid #000;
+        }
+    }
+    & .page_link {
+        margin: 20px 0 0 0;
+        
     }
 }
 

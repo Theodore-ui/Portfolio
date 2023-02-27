@@ -32,9 +32,10 @@
 body {
     font-family: 'Courier prime', Courier, monospace;
     display: flex;
-    flex-direction: row;
-    
-    
+    flex-direction: row; 
+}
+.main_column {
+    overflow-x: hidden;
 }
 .cover {
     position: fixed;

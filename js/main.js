@@ -13,7 +13,6 @@ function menuToggle() {
     } else {
         sideColumn.classList.add('active');  
         mainColumn.style.height = '100vh';
-        mainColumn.style.overflow = 'auto';
         cover.style.display = 'block';
         $('.cover').scrollTop(oldYPos); 
     }   
