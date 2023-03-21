@@ -7,22 +7,7 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
-        <div class="side_column">
-            <div class="side_column_title_container">
-                <h1 class="side_column_title"><a href="index.html">TL</a></h1>
-            </div>
-            <ul>
-                <li><a href="index.html#projects">Portfolio</a></li>
-                <li><a href="coding_examples.html">Coding examples</a></li>
-                <li><a href="scs_scheme.html">S.C.S Scheme</a></li>
-                <li><a href="about_me.html">About me</a></li>
-                <li><a href="index.html#contact">Contact me</a></li>
-            </ul>
-            <div class="github">
-                <h2>GitHub</h2>
-                <a class="github_link" href="https://github.com/Theodore-ui?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-            </div>
-        </div>
+        <?php include('side_menu.php') ?>
         <main class="scs_main">
             <div class="menu_title">
                 <button class="menu_button"><img src="icons/190-menu.png" alt="Menu Button"></button>
@@ -50,7 +35,7 @@
                         topics from basic HTML to C# programming, iOS development, data analysis, and more.
                         By completing courses users can earn points, allowing them to track their progress 
                         and see how much they've covered in certain areas.</p>
-                        <span class="T_S">Total Score: 7,009</span>
+                        <span class="T_S">Total Score: 11,379</span>
                         <span><a href="https://teamtreehouse.com/theodorelorenc2" target=”_blank”>teamtreehouse.com/theodorelorenc2</a></span>
                     </div>
                 </div>

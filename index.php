@@ -1,3 +1,4 @@
+<?php include('functions.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
     <title>Theodore Lorenc Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
     <body>
-        <div class="side_column">
-            <div class="side_column_title_container">
-                <h1 class="side_column_title"><a href="index.html">TL</a></h1>
-            </div>
-            <ul>
-                <li><a href="index.html#projects" class="projects_link">Portfolio</a></li>
-                <li><a href="coding_examples.html" class="">Coding examples</a></li>
-                <li><a href="scs_scheme.html" class="">S.C.S Scheme</a></li>
-                <li><a href="about_me.html" class="">About me</a></li>
-                <li><a href="index.html#contact" class="contact_link">Contact me</a></li>
-            </ul>
-            <div class="github">
-                <h2>GitHub</h2>
-                <a class="github_link" href="https://github.com/Theodore-ui?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-            </div>
-        </div>
+        <?php include('side_menu.php') ?>
         <div class="main_column">
             <div class="cover"></div>
             <header>
@@ -69,59 +55,87 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project_card">
-                            <img class="project_img" src="https://aerocorner.com/wp-content/uploads/2019/07/Vought-F4U-Corsair-1024x500.jpg" alt="project placeholder">
-                            <div class="project_card_bottom">
-                                <h2>Project Three</h2>
-                                <p><a href="#" target=”_blank”>Examine Project</a></p>
-                            </div>
-                        </div>
-                        <div class="project_card">
-                            <img class="project_img" src="https://aerocorner.com/wp-content/uploads/2019/07/Vought-F4U-Corsair-1024x500.jpg" alt="project placeholder">
-                            <div class="project_card_bottom">
-                                <h2>Project Four</h2>
-                                <p><a href="#" target=”_blank”>Examine Project</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="form_wrapper" id="contact">
-                    <form id="contact_form" action="index.html" method="GET">
+                    <form id="contact_form" method="POST" action="index.php#contact" accept-charset="UTF-8" novalidate="novalidate">
                         <div class="form_title_container">
                             <h1 class="form_title">CONTACT ME</h1>
                         </div>
+                        <?php 
+                        if(!empty($success_message)) {
+                            echo $success_message;
+                        } else {
+                            echo "<br/><br/>";
+                        }
+                        ?>
                         <div id="error"></div>
                         <div class="form_first_rows">
                             <div class="label_input right_input">
                                 <label for="first_name">First name</label>
-                                <input type="text" id="first_name" name="first_name">
+                                <input type="text" id="first_name" value="<?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["first_name"];} ?>" name="first_name">
+                                <?php 
+                                if(!empty($first_name_error)) {
+                                    echo $first_name_error;
+                                } else {
+                                    echo "<br/><br/>";
+                                }
+                                ?>
                             </div>
                             <div class="label_input">
                                 <label for="last_name">Last name</label>
-                                <input type="text" id="last_name" name="last_name">
+                                <input type="text" id="last_name" value="<?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["last_name"];} ?>" name="last_name">
+                                <?php 
+                                if(!empty($first_name_error)) {
+                                    echo $first_name_error;
+                                } else {
+                                    echo "<br/><br/>";
+                                }
+                                ?>
                             </div>
                         </div>
                         <div class="form_first_rows">
                             <div class="label_input right_input">
                                 <label for="email">Email address</label>
-                                <input type="text" id="email" name="email">
+                                <input type="text" id="email" value="<?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["email"];} ?>" name="email">
+                                <?php 
+                                if(!empty($email_error)) {
+                                    echo $email_error;
+                                } else {
+                                    echo "<br/><br/>";
+                                }
+                                ?>
                             </div>
                             <div class="label_input">
                                 <label for="subject">Subject</label>
-                                <input id="subject" name="subject">
+                                <input id="subject" value="<?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["subject"];} ?>" name="subject">
+                                <?php 
+                                if(!empty($subject_error)) {
+                                    echo $subject_error;
+                                } else {
+                                    echo "<br/><br/>";
+                                }
+                                ?>
                             </div>
                         </div>
                         <div class="label_input">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="7"></textarea>
+                            <textarea id="message" name="message" rows="7"><?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["message"];} ?></textarea>
+                            <?php 
+                            if(!empty($message_error)) {
+                                echo $message_error;
+                            } else {
+                                echo "<br/><br/>";
+                            }
+                            ?>
                         </div>
-                        <button type="submit" class="form_button">Send</button>
+                        <button type="submit" name="submit_info" value="send" class="form_button">Send</button>
                     </form>
                 </div>
             </main>
         </div>
         <script src="js/jquery-3.6.3.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js?v=<?php echo time(); ?>"></script>
         <script src="https://kit.fontawesome.com/1e403b2a33.js" crossorigin="anonymous"></script>
     </body>
 </html>
