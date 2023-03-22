@@ -73,7 +73,7 @@
                         <div class="form_first_rows">
                             <div class="label_input right_input">
                                 <label for="first_name">First name</label>
-                                <input type="text" id="first_name" value="<?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["first_name"];} ?>" name="first_name">
+                                <input type="text" id="first_name" value="<?php if (isset($_POST['submit_info']) && $is_errors) {echo $_POST["first_name"];} ?>" name="first_name" required>
                                 <?php 
                                 if(!empty($first_name_error)) {
                                     echo $first_name_error;

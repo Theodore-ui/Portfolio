@@ -68,7 +68,7 @@ function insert_contact_info($first_name, $last_name, $email, $subject, $message
             (first_name, last_name, email, subject, message) 
             VALUES (?, ?, ?, ?, ?)";
         $results = $db->prepare($sql);
-        $results->bindParam(1,$First_name,PDO::PARAM_STR);
+        $results->bindParam(1,$first_name,PDO::PARAM_STR);
         $results->bindParam(2,$last_name,PDO::PARAM_STR);
         $results->bindParam(3,$email,PDO::PARAM_STR);
         $results->bindParam(4,$subject,PDO::PARAM_STR);
