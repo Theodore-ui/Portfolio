@@ -7,9 +7,9 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
-        <?php include('side_menu.php') ?>
-        </div>
-        <div class="main_column_examples">
+        <?php include('side_column.php') ?>
+        <div class="cover"></div>
+        <div class="main_column_examples main_column">
             <div class="menu_title">
                 <button class="menu_button"><img src="icons/190-menu.png" alt="Menu Button"></button>
                 <div class="coding_examples_title_container">

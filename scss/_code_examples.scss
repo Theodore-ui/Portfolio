@@ -21,9 +21,11 @@
     width: 100%;
     padding: 15px;
     margin: 0;
-    border-bottom: 6px dashed $_brass_yellow;
     .code_example {
         margin: 0;
+    }
+    & + .code_examples_container {
+        border-top: 6px dashed $_brass_yellow;
     }
 }
 .code_example_title {
@@ -34,8 +36,8 @@
     flex-direction: column;
     align-items: center;    
 }
-.des_section {
-    border-bottom: 3px dashed $_brass_yellow;
+.des_section + .des_section {
+    border-top: 3px dashed $_brass_yellow;
 }
 .example_description {
     display: flex;

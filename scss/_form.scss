@@ -2,9 +2,9 @@
 .form_title_container {
     margin: 0 auto 5px;
     max-width: 650px;
-    border-bottom: 6px dashed #000;
     .form_title {
         margin: 0;
+        border-bottom: 4.5px dashed black;
     }
 }
 #contact_form {
@@ -14,7 +14,7 @@
     max-width: 650px;
     padding: 25px;
     border: 6px dashed #000;
-    margin: 0 auto 30px;
+    margin: 0 auto 0;
     .label_input {
         width: 100%;
         display: flex;
@@ -50,7 +50,7 @@
     padding: 10px 15px;
     background-color: #e3d343;
     border: none;
-    border-radius: 0;
+    border-radius: 4px;
     width: 192.038px;
     margin: 0 auto;
     cursor: pointer;

@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
     <body>
-        <?php include('side_menu.php') ?>
+        <?php include('side_column.php') ?>
         <div class="main_column">
             <div class="cover"></div>
             <header>
@@ -36,8 +36,8 @@
                         <div class="project_card">
                             <img class="project_img" src="images/netmatters.png" alt="Netmatters home page recreation">
                             <div class="project_card_bottom">
-                                <h2>HTML &#38; CSS/SASS Reflection</h2>
-                                <p>A recreation of the Netmatters home page.</p>
+                                <h3>HTML &#38; CSS Reflection</h3>
+                                <p>A recreation of the Netmatters home and contact pages.</p>
                                 <div class="project_links">
                                     <p class="page_link"><a href="http://netmatters.theodore-lorenc.netmatters-scs.co.uk/" target=”_blank”>Project Page</a></p>
                                     <p class="rep_link"><a href="https://github.com/Theodore-ui/HTML_and_CSS_Reflection" target=”_blank”>GitHub Repository</a></p>
@@ -47,7 +47,7 @@
                         <div class="project_card">
                             <img class="project_img" src="images/link_image.png" alt="Linking an image to an email">
                             <div class="project_card_bottom">
-                                <h2>JavaScript Array Reflection</h2>
+                                <h3>JavaScript Array Reflection</h3>
                                 <p>A randomly generated can be linked to an email. All images linked to an email can be viewed and unlinked.</p>
                                 <div class="project_links">
                                     <p class="page_link"><a href="http://javascript-array.theodore-lorenc.netmatters-scs.co.uk/" target=”_blank”>Project Page</a></p>

@@ -7,8 +7,9 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
-        <?php include('side_menu.php') ?>
-        <main class="scs_main">
+        <?php include('side_column.php') ?>
+        <main class="scs_main main_column">
+            <div class="cover"></div>
             <div class="menu_title">
                 <button class="menu_button"><img src="icons/190-menu.png" alt="Menu Button"></button>
                 <div class="scs_title_container">  
@@ -35,7 +36,7 @@
                         topics from basic HTML to C# programming, iOS development, data analysis, and more.
                         By completing courses users can earn points, allowing them to track their progress 
                         and see how much they've covered in certain areas.</p>
-                        <span class="T_S">Total Score: 11,379</span>
+                        <span class="T_S">Total Score: 12,916</span>
                         <span><a href="https://teamtreehouse.com/theodorelorenc2" target=”_blank”>teamtreehouse.com/theodorelorenc2</a></span>
                     </div>
                 </div>
