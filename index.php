@@ -38,9 +38,8 @@
                             <div class="project_card_bottom">
                                 <h3>HTML &#38; CSS Reflection</h3>
                                 <p>A recreation of the Netmatters home and contact pages.</p>
-                                <div class="project_links">
-                                    <p class="page_link"><a href="http://netmatters.theodore-lorenc.netmatters-scs.co.uk/" target=”_blank”>Project Page</a></p>
-                                    <p class="rep_link"><a href="https://github.com/Theodore-ui/HTML_and_CSS_Reflection" target=”_blank”>GitHub Repository</a></p>
+                                <div class="project_links">   
+                                    <p class="rep_link"><a href="https://github.com/Theodore-ui/HTML_and_CSS_Reflection" target=”_blank”>GitHub Repository</a></p>                                    
                                 </div>
                             </div>
                         </div>
@@ -48,9 +47,8 @@
                             <img class="project_img" src="images/link_image.png" alt="Linking an image to an email">
                             <div class="project_card_bottom">
                                 <h3>JavaScript Array Reflection</h3>
-                                <p>A randomly generated can be linked to an email. All images linked to an email can be viewed and unlinked.</p>
+                                <p>A randomly generated image can be linked to an email. All images linked to an email can be viewed and unlinked.</p>
                                 <div class="project_links">
-                                    <p class="page_link"><a href="http://javascript-array.theodore-lorenc.netmatters-scs.co.uk/" target=”_blank”>Project Page</a></p>
                                     <p class="rep_link"><a href="https://github.com/Theodore-ui/Javascript_Array_Reflection" target=”_blank”>GitHub Repository</a></p>
                                 </div>
                             </div>

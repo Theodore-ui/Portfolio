@@ -11,13 +11,14 @@
     }
 }
 .project_card_container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 .project_card {
     max-width: 650px;
+    width: 100%;
     border: 6px solid $_brass_yellow;
     background-color: $_brass_yellow;
     border-radius: 20px 20px 0 0;
@@ -46,15 +47,9 @@
     }
 }
 
-.project_links {
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.project_links {    
     font-weight: bold;
-    
-    
+    margin-top: auto;
     & p {
         border-bottom: 3px dashed #000;
         margin: 20px 0 0 0;
@@ -92,7 +87,6 @@
         flex-wrap: wrap;
     }
     .project_card {
-        // width: 310px;
         width: 360px;
         margin: 0 15px 30px 15px;
     }
